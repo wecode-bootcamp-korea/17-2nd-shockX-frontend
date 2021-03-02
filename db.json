@@ -1,0 +1,263 @@
+{
+  "categories": {
+    "brandCategories" : {
+      "categoryId" : 1,
+      "categoryName" : "AIR JORDAN",
+      "productDetail" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 , "Packs", "Spizike", "Legacy 312", "Future", "Jordan OFF-WHITE", "Women", "Kids", "Other"]
+    },
+  
+    "sizeCategories" : {
+      "categoryId" : 2,
+      "size" : "SIZES",
+      "sizeDetail" : [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 16, 17, 18]
+    },
+  
+    "priceCategories" : {
+      "categoryId" : 3,
+      "price" : "PRICES",
+      "priceFilter" : ["Under $100", "$100 - $200", "$200 - $300", "$300 - $400", "$400 - $500", "$500 - $600", "$600 +"]
+    }
+  },
+  "products": [
+    {
+        "price": "119.00",
+        "productId": 1,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/2f442d23-d82e-444d-bbf7-038b26e4c67c/wengang-zhai-_fOL6ebfECQ-unsplash.jpg",
+        "productName": "Jordan 6 Retro Black Infrared (2019)"
+    },
+    {
+        "price": "69.00",
+        "productId": 2,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/30f70ef1-c110-438b-8f67-959a8a7610ec/matthew-dagelet-1WZYDo7IKzA-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Dark Mocha"
+    },
+    {
+        "price": "219.00",
+        "productId": 3,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/6d148f4d-a49c-4a2e-8064-671fe5c44ad3/junior-samson-BjhKc5QBzlg-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Spider-Man Origin Story"
+    },
+    {
+        "price": "269.00",
+        "productId": 4,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/51b8b8b1-9ee6-44a2-918c-5c6a77561897/jade-scarlato-h0QeW06hr2I-unsplash.jpg",
+        "productName": "Jordan 4 Retro Bred (2019)"
+    },
+    {
+        "price": "319.00",
+        "productId": 5,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/2064131c-2297-48e6-bdd3-020229d2802d/izzy-gibson-UC8F4jvYjjE-unsplash.jpg",
+        "productName": "Jordan 4 Retro Raptors Drake OVO (2019)"
+    },
+    {
+        "price": "369.00",
+        "productId": 6,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/24264c5a-41b5-4544-9288-8809dcff3888/maksim-larin-NOpsC3nWTzY-unsplash%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A1%E1%84%87%E1%85%A9%E1%86%AB.jpg",
+        "productName": "Jordan 3 Retro UNC (2020)"
+    },
+    {
+        "price": "419.00",
+        "productId": 7,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/8be3e787-1621-42a8-a72a-61d31fc55e16/sahand-babali-2GY6lEjAeBY-unsplash.jpg",
+        "productName": "Jordan 11 Retro Concord (2018)"
+    },
+    {
+        "price": "469.00",
+        "productId": 8,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/76dcee38-bee8-4d60-9f07-34af574ca05f/jade-scarlato-dT6wB15xdoA-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Off-White Chicago"
+    },
+    {
+        "price": "469.00",
+        "productId": 9,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/c05c65a9-a6b5-41a3-beff-8ac5ad94d3ec/peter-albanese-Gqlmzo-q6mY-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Off-White University Blue"
+    },
+    {
+        "price": "215.00",
+        "productId": 10,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/89757416-6318-4cfe-8265-6a8f8654f465/usama-akram-kP6knT7tjn4-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Off-White University Blue"
+    },
+    {
+        "price": "220.00",
+        "productId": 11,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/00cff82f-9071-46da-8d1d-fd9a203fafa3/najla-cam-jPT96js0Lgk-unsplash.jpg",
+        "productName": "Jordan 5 Retro Fire Red Silver Tongue (2020)"
+    },
+    {
+        "price": "215.00",
+        "productId": 12,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/aac6f1de-f182-4fa8-90df-419ef8692456/luis-felipe-lins-LG88A2XgIXY-unsplash.jpg",
+        "productName": "Jordan 10 Retro Doernbecher"
+    },
+    {
+        "price": "220.00",
+        "productId": 13,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/8ed8eb21-69ee-4b6f-9a5f-163a3f6ecb9f/grailify-egKlGvWHWbU-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Court Purple White"
+    },
+    {
+        "price": "115.00",
+        "productId": 14,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/47b075fe-48b5-472a-91ad-a54be6162480/grailify-46ct1C1q6kw-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Shattered Backboard 3.0"
+    },
+    {
+        "price": "230.00",
+        "productId": 15,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/5aae5357-c845-4f7b-8f46-4ccb526daca0/stephane-coudassot-berducou-wXoylAAARFE-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Travis Scott"
+    },
+    {
+        "price": "130.00",
+        "productId": 16,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/55997cab-0650-4af6-846c-94181ba03c57/jade-scarlato-R5gcTwsme68-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Guava Ice"
+    },
+    {
+        "price": "218.00",
+        "productId": 17,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/34b177b9-54f1-4d36-a575-301f8615435b/grailify-Knvzr3Fiqzc-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Neutral Grey Hyper Crimson"
+    },
+    {
+        "price": "534.00",
+        "productId": 18,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/65f1bd54-ddb6-4a9e-bb9a-49c64101a36c/zachary-keimig-wT_vIwtVnjk-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Black Crimson Tint"
+    },
+    {
+        "price": "145.00",
+        "productId": 19,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/a22d648a-7bf3-460b-9457-9d8b7ef9ab05/alex-motoc-xyjB6_ZDaKw-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Clay Green"
+    },
+    {
+        "price": "339.00",
+        "productId": 20,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/3192c4ad-a17d-47be-a978-cf1fe573cd18/jeremy-alford-UTaSdQQMK7A-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Pine Green Black"
+    },
+    {
+        "price": "253.00",
+        "productId": 21,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/3f59a84c-2d92-4b7b-a956-be041cdae28f/smith-major-_UsZrKhbP-8-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Dark Mocha"
+    },
+    {
+        "price": "45.00",
+        "productId": 22,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/4cb2d007-7bef-4008-b786-4372435e9823/klim-musalimov-CMGKxMmZcRk-unsplash.jpg",
+        "productName": "Jordan 1 Retro High Court Purple White"
+    },
+    {
+        "price": "72.00",
+        "productId": 23,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/9052265c-443f-47ab-9e26-18ffb7c49444/izzy-gibson-ut-qKclcmBI-unsplash.jpg",
+        "productName": "Jordan 11 Retro Space Jam (2016)"
+    },
+    {
+        "price": "234.00",
+        "productId": 24,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/02d9d93f-7bb2-4487-9654-01e529e6bec9/alexander-rotker-l8p1aWZqHvE-unsplash.jpg",
+        "productName": "Jordan 11 Retro Low Cool Grey"
+    },
+    {
+        "price": "550.00",
+        "productId": 25,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/8fee3e84-db4e-4c28-9546-25dcc642170a/andres-jasso-PqbL_mxmaUE-unsplash-removebg-preview.png",
+        "productName": "Jordan 12 Retro OVO White"
+    },
+    {
+        "price": "161.00",
+        "productId": 26,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/208553b0-76dd-4b66-be16-40f7e6b9e900/jeremy-alford-08GOqekIW-4-unsplash.jpg",
+        "productName": "Jordan 12 Retro Fiba (2019)"
+    },
+    {
+        "price": "355.00",
+        "productId": 27,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/430ce39e-892e-4fc5-8ebd-508616b6d699/mnz-v13tnV6D9lw-unsplash.jpg",
+        "productName": "Jordan 4 Retro Metallic Purple"
+    },
+    {
+        "price": "269.00",
+        "productId": 28,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/b4f26298-0413-4fd2-95fd-5199ebe20848/brian-hall-OShz0kboddc-unsplash.jpg",
+        "productName": "Jordan 3 Retro Black Cement (2011)"
+    },
+    {
+        "price": "61.00",
+        "productId": 29,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/cd058298-aa69-4905-8fea-ee3f6846c616/jeremy-alford-0FX3HpAWN2s-unsplash.jpg",
+        "productName": "Jordan 3 Retro True Blue (2011)"
+    },
+    {
+        "price": "746.00",
+        "productId": 30,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/5a4aefc0-466f-407c-b101-ff6d51c8c394/jade-scarlato-sTO7MWOr4PM-unsplash.jpg",
+        "productName": "Jordan 6 Retro Flight Nostalgia"
+    },
+    {
+        "price": "447.00",
+        "productId": 31,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/5e41a98f-5c85-48d2-9ac9-604ce6debc72/jade-scarlato-YlAopNQDDwY-unsplash.jpg",
+        "productName": "Jordan 6 Retro Tinker"
+    },
+    {
+        "price": "520.00",
+        "productId": 32,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/e839f0f2-7edd-4279-9ff3-0ad2aad3d5ba/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg",
+        "productName": "Jordan 7 Retro Tinker Alternate"
+    },
+    {
+        "price": "170.00",
+        "productId": 33,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/b4f22925-e85f-4704-adb2-37e9cb2ce0ab/zachary-keimig-wT_vIwtVnjk-unsplash%20(1).jpg",
+        "productName": "Jordan 11 Retro Playoffs Bred (2019)"
+    },
+    {
+        "price": "552.00",
+        "productId": 34,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/c81e7de7-98a0-4c47-90a3-daf8f0cceab1/jeremy-alford-wPlXREQUCBQ-unsplash.jpg",
+        "productName": "Jordan 13 Retro Flint (2020)"
+    },
+    {
+        "price": "568.00",
+        "productId": 35,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/6526b3ea-53a1-41dd-a1f2-5aa6ce3d818d/maxwell-nelson-NGWwHZeHNVE-unsplash.jpg",
+        "productName": "Jordan 13 Retro Reverse He Got Game"
+    },
+    {
+        "price": "584.00",
+        "productId": 36,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/627ff87b-2c7c-496b-9fb2-73dd28922f8b/giorgio-trovato-RrNKFfM9jJI-unsplash.jpg",
+        "productName": "Jordan 14 Retro Doernbecher (2019)"
+    },
+    {
+        "price": "600.00",
+        "productId": 37,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/5ff9f3dd-0db3-44f4-b93f-c14459420a8d/zachary-keimig-qm0ZMDlIwm8-unsplash.jpg",
+        "productName": "Jordan 5 Retro OFF-WHITE Sail"
+    },
+    {
+        "price": "187.00",
+        "productId": 38,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/be340894-0e67-4ee4-929f-8228e04ca5bb/jade-scarlato-Fezm1veF_Fg-unsplash.jpg",
+        "productName": "Jordan 5 Retro Off-White Black"
+    },
+    {
+        "price": "632.00",
+        "productId": 39,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/36084681-25c6-4710-8446-971e86bd47e4/izzy-gibson-UC8F4jvYjjE-unsplash.jpg",
+        "productName": "Jordan 3 Retro True Blue (2016)"
+    },
+    {
+        "price": "168.00",
+        "productId": 40,
+        "productImage": "https://media.vlpt.us/images/hyeyoonc/post/50887890-7ed1-404e-9249-3b8b2dd99c2e/najla-cam-jPT96js0Lgk-unsplash.jpg",
+        "productName": "Jordan 5 Retro SE Oregon"
+    }
+  ]
+}
