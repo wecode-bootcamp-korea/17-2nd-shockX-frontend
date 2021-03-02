@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended"
+  ]
+  }
+
+
