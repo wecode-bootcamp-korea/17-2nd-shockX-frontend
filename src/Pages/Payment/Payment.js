@@ -16,7 +16,7 @@ import {
   billingProps,
   notAvailableProps,
 } from "./paymentData";
-import ORDERAPI from "../../Config";
+import { ORDERAPI } from "../../Config";
 
 const Payment = () => {
   const [currentIdx, setCurrentIdx] = useState(0);

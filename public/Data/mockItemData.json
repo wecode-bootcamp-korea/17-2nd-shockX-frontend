@@ -1,0 +1,524 @@
+{
+    "brandCategories" : {
+      "categoryId" : 1,
+      "categoryName" : "AIR JORDAN",
+      "productDetail" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 , "Packs", "Spizike", "Legacy 312", "Future", "Jordan OFF-WHITE", "Women", "Kids", "Other"]
+    },
+
+    "sizeCategories" : {
+      "size" : "SIZES",
+      "sizeDetail" : [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 16, 17, 18]
+    },
+
+    "priceCategories" : {
+      "price" : "PRICES",
+      "priceFilter" : ["Under $100", "$100 - $200", "$200 - $300", "$300 - $400", "$400 - $500", "$500 - $600", "$600 +"]
+    },
+
+    "productInfo" : [
+      {
+        "productId" : 1,
+        "productName" : "air-jordan-1-mid-chicago-toe",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 12
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 222
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 22
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 2632
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 1234
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 888
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 8
+          }
+        ]
+      },
+      {
+        "productId" : 2,
+        "productName" : "air-jordan-1-retro-high-court-purple-white",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 330
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 732
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 142
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 32
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 34
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 88
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 2
+          }
+        ]
+      },
+      {
+        "productId" : 3,
+        "productName" : "air-jordan-1-retro-high-light-smoke-grey",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 10
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 732
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 142
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 32
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 34
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 88
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 23
+          }
+        ]
+      },
+      {
+        "productId" : 4,
+        "productName" : "air-jordan-1-mid-chicago-toe",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 32
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 222
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 22
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 2632
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 1234
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 888
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 43
+          }
+        ]
+      },
+      {
+        "productId" : 5,
+        "productName" : "air-jordan-1-retro-high-court-purple-white",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 466
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 732
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 142
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 32
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 34
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 88
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 12
+          }
+        ]
+      },
+      {
+        "productId" : 6,
+        "productName" : "air-jordan-1-retro-high-light-smoke-grey",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 201
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 732
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 142
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 32
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 34
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 88
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 8
+          }
+        ]
+      },
+      {
+        "productId" : 7,
+        "productName" : "air-jordan-1-mid-chicago-toe",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 995
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 222
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 22
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 2632
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 1234
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 888
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 3
+          }
+        ]
+      },
+      {
+        "productId" : 8,
+        "productName" : "air-jordan-1-retro-high-court-purple-white",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 847
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 732
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 142
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 32
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 34
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 88
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 3
+          }
+        ]
+      },
+      {
+        "productId" : 9,
+        "productName" : "air-jordan-1-retro-high-light-smoke-grey",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 567
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 732
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 142
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 32
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 34
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 88
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 3
+          }
+        ]
+      },
+      {
+        "productId" : 10,
+        "productName" : "air-jordan-1-mid-chicago-toe",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 753
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 222
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 22
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 2632
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 1234
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 888
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 3
+          }
+        ]
+      },
+      {
+        "productId" : 11,
+        "productName" : "air-jordan-1-retro-high-court-purple-white",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 55
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 732
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 142
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 32
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 34
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 88
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 3
+          }
+        ]
+      },
+      {
+        "productId" : 12,
+        "productName" : "air-jordan-1-retro-high-light-smoke-grey",
+        "productImage" : "/Images/Air-Jordan-1-Mid-Chicago-Toe-Product.jpg",
+        "price" : [
+          {
+            "sizeId" : 1,
+            "size" : 1,
+            "lowestAsk" : 229
+          },
+          {
+            "sizeId" : 2,
+            "size" : 1.5,
+            "lowestAsk" : 732
+          },
+          {
+            "sizeId" : 3,
+            "size" : 2,
+            "lowestAsk" : 142
+          },
+          {
+            "sizeId" : 4,
+            "size" : 2.5,
+            "lowestAsk" : 32
+          },
+          {
+            "sizeId" : 5,
+            "size" : 3,
+            "lowestAsk" : 34
+          },
+          {
+            "sizeId" : 6,
+            "size" : 3.5,
+            "lowestAsk" : 88
+          },
+          {
+            "sizeId" : 7,
+            "size" : 4,
+            "lowestAsk" : 3
+          }
+        ]
+      }
+    ]    
+  }
