@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from "react";
 import MenuTab from "./Components/MenuTab";
 import BuyingSelling from "./Components/BuyingSelling";
@@ -7,7 +8,7 @@ import styled from "styled-components";
 const Mypage = () => {
   const [currentMenu, setCurrentMenu] = useState(2);
 
-  const menuHandler = (id) => {
+  const menuHandler = id => {
     setCurrentMenu(id);
   };
 

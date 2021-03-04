@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { Component } from "react";
 import styled from "styled-components";
 import Ticker from "react-ticker";
@@ -12,8 +13,8 @@ class TickerComp extends Component {
   }
   componentDidMount() {
     fetch("Data/TickerData.json")
-      .then((res) => res.json())
-      .then((res) => {
+      .then(res => res.json())
+      .then(res => {
         this.setState({
           tickerList: res,
         });
@@ -30,7 +31,7 @@ class TickerComp extends Component {
         <Ticker move={this.state.tickerMove} speed={5}>
           {({ index }) => (
             <>
-              {this.state.tickerList.map((item) => {
+              {this.state.tickerList.map(item => {
                 return (
                   <>
                     <TickerText key={item.id}>{item.text}</TickerText>
@@ -62,15 +63,15 @@ const TickerText = styled.span`
 
 const TickerNum = styled.span`
   margin-left: 10px;
-  color: ${(props) => props.color};
+  color: ${props => props.color};
 `;
 
 const TickerArrow = styled.span`
   margin-right: 10px;
   width: 20px;
   height: 20px;
-  font-size: ${(props) => (props.color === "green" ? "20px" : "17px")};
-  color: ${(props) => props.color};
+  font-size: ${props => (props.color === "green" ? "20px" : "17px")};
+  color: ${props => props.color};
 `;
 const TickerWrapper = styled.footer`
   position: sticky;
