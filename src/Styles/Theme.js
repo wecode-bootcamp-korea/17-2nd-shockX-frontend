@@ -21,10 +21,15 @@ const flexColumnCenter = css`
   align-items: center;
 `;
 
+const borderRadius = css`
+  border-radius: 4px;
+`;
+
 const theme = {
   colors,
   flexCenter,
   flexColumnCenter,
+  borderRadius,
 };
 
 export default theme;
