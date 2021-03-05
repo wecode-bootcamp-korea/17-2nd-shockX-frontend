@@ -14,9 +14,17 @@ const flexCenter = css`
   align-items: center;
 `;
 
+const flexColumnCenter = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 const theme = {
   colors,
   flexCenter,
+  flexColumnCenter,
 };
 
 export default theme;
