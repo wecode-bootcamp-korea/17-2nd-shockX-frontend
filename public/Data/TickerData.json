@@ -1,0 +1,11 @@
+[
+  { "id": 1, "text": "WECODE", "num": 777, "color": "red" },
+  { "id": 2, "text": "SHOCKX", "num": 999, "color": "green" },
+  { "id": 3, "text": "MINJI", "num": 10000, "color": "green" },
+  { "id": 4, "text": "WHAT", "num": 345, "color": "green" },
+  { "id": 5, "text": "JORDAN", "num": 789, "color": "red" },
+  { "id": 6, "text": "NIKE", "num": 456, "color": "green" },
+  { "id": 7, "text": "ADIDAS", "num": 543, "color": "red" },
+  { "id": 8, "text": "NEWBALANCE", "num": 234, "color": "red" },
+  { "id": 9, "text": "SEOUL", "num": 987, "color": "green" }
+]
