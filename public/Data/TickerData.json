@@ -1,11 +1,11 @@
 [
-  { "id": 1, "text": "WECODE", "num": 777, "color": "red" },
+  { "id": 1, "text": "WECODE", "num": 777, "color": "green" },
   { "id": 2, "text": "SHOCKX", "num": 999, "color": "green" },
-  { "id": 3, "text": "MINJI", "num": 10000, "color": "green" },
-  { "id": 4, "text": "WHAT", "num": 345, "color": "green" },
-  { "id": 5, "text": "JORDAN", "num": 789, "color": "red" },
-  { "id": 6, "text": "NIKE", "num": 456, "color": "green" },
-  { "id": 7, "text": "ADIDAS", "num": 543, "color": "red" },
-  { "id": 8, "text": "NEWBALANCE", "num": 234, "color": "red" },
-  { "id": 9, "text": "SEOUL", "num": 987, "color": "green" }
+  { "id": 3, "text": "HASUNG", "num": 789, "color": "green" },
+  { "id": 4, "text": "SEUNGHYUN", "num": 545, "color": "green" },
+  { "id": 5, "text": "SUA", "num": 779, "color": "green" },
+  { "id": 6, "text": "MINJU", "num": 556, "color": "green" },
+  { "id": 7, "text": "HYEYUN", "num": 643, "color": "green" },
+  { "id": 8, "text": "BINHO", "num": 634, "color": "green" },
+  { "id": 9, "text": "YOOJIN", "num": 135, "color": "green" }
 ]

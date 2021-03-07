@@ -75,21 +75,21 @@ const Payment = () => {
   }, [useParam.id]);
 
   //백앤드와 통신할때
-  useEffect(() => {
-    if (useParam.id === "buy") {
-      setIsBuy(0);
-    } else {
-      setIsBuy(1);
-    }
-    fetch(`${ORDERAPI}/${useParam.id}/1?size=10`, {
-      method: "GET",
-      headers: {
-        Authorization: localStorage.getItem("Kakao_token"),
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => setDetailData(data.data.product));
-  }, [useParam.id]);
+  // useEffect(() => {
+  //   if (useParam.id === "buy") {
+  //     setIsBuy(0);
+  //   } else {
+  //     setIsBuy(1);
+  //   }
+  //   fetch(`${ORDERAPI}/${useParam.id}/1?size=10`, {
+  //     method: "GET",
+  //     headers: {
+  //       Authorization: localStorage.getItem("Kakao_token"),
+  //     },
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => setDetailData(data.data.product));
+  // }, [useParam.id]);
 
   const sumbitPaymentInfo = () => {
     fetch(`${ORDERAPI}/${useParam.id}/1?size=10`, {

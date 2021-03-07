@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -17,6 +17,15 @@ const Nav = () => {
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [searchInput, setSearchInput] = useState("");
   const history = useHistory();
+  const location = useLocation();
+
+  const handleScroll = () => {
+    if (location.pathname === "/") {
+      setIsMainImage(window.pageYOffset > 200 ? false : true);
+    } else {
+      setIsMainImage(false);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,11 +34,17 @@ const Nav = () => {
       );
     };
     window.addEventListener("scroll", handleScroll);
-  }, [isSearchModalOpen]);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
+    if (location.pathname !== "/") {
+      setIsMainImage(false);
+    }
     setNavData(NAVDATA);
-  }, []);
+  }, [location.pathname]);
 
   //백앤드와 통신할때
   // useEffect(() => {
@@ -86,7 +101,7 @@ const Nav = () => {
         />
         {!isMainImage && (
           <SubInputContainer>
-            <FontAwesomeIcon icon={faSearch} size="m" />
+            <FontAwesomeIcon icon={faSearch} size="sm" />
             <SubInput placeholder="Search for brand, color, etc." />
           </SubInputContainer>
         )}
@@ -117,13 +132,14 @@ const Nav = () => {
           <SellBtn>Sell</SellBtn>
         </NavMenu>
       </NavContainer>
-      <MainImg
-        isSearchModalOpen={isSearchModalOpen}
-        searchItems={filteredList}
-        handleSearch={handleSearch}
-        closeSearchModal={closeSearchModal}
-      />
-      )
+      {location.pathname === "/" && (
+        <MainImg
+          isSearchModalOpen={isSearchModalOpen}
+          searchItems={filteredList}
+          handleSearch={handleSearch}
+          closeSearchModal={closeSearchModal}
+        />
+      )}
     </>
   );
 };
@@ -136,7 +152,7 @@ const NavContainer = styled.header`
   align-items: center;
   position: fixed;
   top: 0;
-  transition: background-color 1s linear 0s, box-shadow 1s linear 0s;
+  transition: background-color 0.1s linear 0s, box-shadow 0.5s linear 0s;
   background-color: ${(props) => (props.isMainImage ? "transparent" : "white")};
   border-bottom: ${(props) =>
     props.isMainImage ? "none" : "1px solid lightgrey"};

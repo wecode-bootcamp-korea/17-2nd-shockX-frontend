@@ -5,14 +5,15 @@ import ItemDetail from "./Pages/ItemDetail/ItemDetail";
 import ItemList from "./Pages/ItemList/ItemList";
 import Payment from "./Pages/Payment/Payment";
 import Mypage from "./Pages/Mypage/Mypage";
+import Main from "./Pages/Main/Main";
 
 class Routes extends React.Component {
   render() {
     return (
       <Router>
         <Switch>
-          <Route exact path="/product" component={ItemList} />
-          {/* <Route exact path="/product/:size" component={ItemList} /> */}
+          <Route exact path="/" component={Main} />
+          <Route exact path="/itemlist" component={ItemList} />
           <Route exact path="/account" component={Account} />
           <Route exact path="/itemdetail" component={ItemDetail} />
           <Route exact path="/order/:id" component={Payment} />
