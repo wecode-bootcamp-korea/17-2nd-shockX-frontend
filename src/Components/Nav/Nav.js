@@ -7,26 +7,56 @@ import MainImg from "./Components/MainImg";
 import MyAccountModal from "./Components/MyAccountModal";
 import { NAVDATA } from "./navData";
 
+const LIMIT = 30;
+
 const Nav = () => {
   const [isMainImage, setIsMainImage] = useState(true);
   const [navData, setNavData] = useState([]);
   const [isMyAccountModal, setIsMyAccountModal] = useState(false);
+  const [searchItems, setSearchItems] = useState([]);
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+  const [searchInput, setSearchInput] = useState("");
   const history = useHistory();
 
-  const handleScroll = () => {
-    setIsMainImage(window.pageYOffset > 0 ? false : true);
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      setIsMainImage(
+        window.pageYOffset > 0 && isSearchModalOpen === false ? false : true
+      );
+    };
     window.addEventListener("scroll", handleScroll);
-  }, []);
+  }, [isSearchModalOpen]);
 
   useEffect(() => {
     setNavData(NAVDATA);
   }, []);
 
+  //백앤드와 통신할때
+  // useEffect(() => {
+  //   fetch(`http://10.214.6.150:8000/product?limit=${LIMIT}`)
+  //     .then((res) => res.json())
+  //     .then((data) => setSearchItems(data.products));
+  // }, []);
+
+  useEffect(() => {
+    fetch("/Data/NavSearchData.json")
+      .then((res) => res.json())
+      .then((data) => setSearchItems(data));
+  }, []);
+
   const showAccountModal = () => {
     setIsMyAccountModal(!isMyAccountModal);
+  };
+
+  const handleSearch = (e) => {
+    setSearchInput(e.target.value);
+    if (e.target.value.length > 0) {
+      setIsSearchModalOpen(true);
+    }
+  };
+
+  const closeSearchModal = () => {
+    setIsSearchModalOpen(false);
   };
 
   const goToPage = (url) => {
@@ -37,6 +67,10 @@ const Nav = () => {
     localStorage.removeItem("Kakao_token");
     alert("You are logged out!");
   };
+
+  const filteredList = searchItems.filter((item) => {
+    return item.productName.toLowerCase().includes(searchInput);
+  });
 
   return (
     <>
@@ -83,7 +117,13 @@ const Nav = () => {
           <SellBtn>Sell</SellBtn>
         </NavMenu>
       </NavContainer>
-      {isMainImage && <MainImg />}
+      <MainImg
+        isSearchModalOpen={isSearchModalOpen}
+        searchItems={filteredList}
+        handleSearch={handleSearch}
+        closeSearchModal={closeSearchModal}
+      />
+      )
     </>
   );
 };

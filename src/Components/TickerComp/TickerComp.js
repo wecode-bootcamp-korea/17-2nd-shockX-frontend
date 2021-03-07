@@ -73,6 +73,8 @@ const TickerArrow = styled.span`
   color: ${(props) => props.color};
 `;
 const TickerWrapper = styled.footer`
+  position: sticky;
+  bottom: 0;
   padding-top: 15px;
   height: 50px;
   background-color: black;
