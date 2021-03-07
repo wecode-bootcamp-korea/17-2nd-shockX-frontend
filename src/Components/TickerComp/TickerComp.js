@@ -27,7 +27,7 @@ class TickerComp extends Component {
   render() {
     return (
       <TickerWrapper onMouseOver={this.stopTicker}>
-        <Ticker move={this.state.tickerMove} speed={15}>
+        <Ticker move={this.state.tickerMove} speed={5}>
           {({ index }) => (
             <>
               {this.state.tickerList.map((item) => {
