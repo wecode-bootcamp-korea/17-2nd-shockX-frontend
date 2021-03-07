@@ -1,17 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import SearchModal from "./SearchModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const MainImg = () => {
+const MainImg = ({
+  searchItems,
+  closeSearchModal,
+  isSearchModalOpen,
+  handleSearch,
+}) => {
   return (
-    <MainImageContainer>
+    <MainImageContainer onClick={closeSearchModal}>
       <Title>Buy & Sell</Title>
       <SubTitle>Authentic Sneakers</SubTitle>
       <SearchContainer>
         <FontAwesomeIcon icon={faSearch} size="lg" />
-        <SearchInMain placeholder="Search..." />
+        <SearchInMain onChange={handleSearch} placeholder="Search..." />
       </SearchContainer>
+      {isSearchModalOpen && <SearchModal searchItems={searchItems} />}
     </MainImageContainer>
   );
 };
