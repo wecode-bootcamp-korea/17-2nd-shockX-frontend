@@ -1,5 +1,6 @@
 import React from "react";
+import MenuTab from "./Components/MenuTab";
 
-const Mypage = (props) => <div></div>;
+const Mypage = () => <MenuTab />;
 
 export default Mypage;
