@@ -1,22 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import MenuTabItem from "./MenuTabItem";
 
-const MenuTab = () => {
-  const [currentMenu, setCurrentMenu] = useState(0);
-
-  const menuHandler = (id) => {
-    setCurrentMenu(id);
-  };
-
+const MenuTab = ({ menuHandler, currentMenu }) => {
   return (
     <MenuTabWrapper>
-      <UserNameText>Rylie YJ Suh</UserNameText>
+      <UserNameText>{localStorage.getItem("username")}</UserNameText>
       {CATEGORY_ARR.map((category, idx) => {
         return (
           <MenuTabItem
             key={idx}
-            idx={idx}
             data={category}
             menuHandler={menuHandler}
             currentMenu={currentMenu}
@@ -32,7 +25,7 @@ export default MenuTab;
 const MenuTabWrapper = styled.aside`
   background-color: #f5f5f6;
   width: 260px;
-  height: 1000px;
+  height: 100%;
 `;
 
 const UserNameText = styled.h2`

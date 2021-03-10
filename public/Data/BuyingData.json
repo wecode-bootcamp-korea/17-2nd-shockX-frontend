@@ -1,0 +1,102 @@
+{
+  "buying": {
+    "Current": [
+      {
+        "name": "Jordan 1",
+        "bidPrice": 300,
+        "highestBid": 350,
+        "lowestAsk": 400,
+        "expires": "Date",
+        "size": 10
+      },
+      {
+        "name": "Jordan 1",
+        "bidPrice": 300,
+        "highestBid": 350,
+        "lowestAsk": 400,
+        "expires": "Date",
+        "size": 12
+      }
+    ],
+    "Pending": [
+      {
+        "name": "Jordan 1",
+        "orderNumber": 1233892,
+        "purchaseDate": "Date",
+        "price": 270,
+        "status": "Item Delivered Successfully"
+      },
+      {
+        "name": "Jordan 1",
+        "orderNumber": 1233892,
+        "purchaseDate": "Date",
+        "price": 270,
+        "status": "Item Delivered Successfully"
+      },
+      {
+        "name": "Jordan 1",
+        "orderNumber": 1233892,
+        "purchaseDate": "Date",
+        "price": 270,
+        "status": "Item Delivered Successfully"
+      },
+      {
+        "name": "Jordan 1",
+        "orderNumber": 1233892,
+        "purchaseDate": "Date",
+        "price": 270,
+        "status": "Item Delivered Successfully"
+      }
+    ]
+  },
+  "selling": {
+    "Current": [
+      {
+        "name": "Jordan 5",
+        "bidPrice": 333,
+        "highestBid": 355,
+        "lowestAsk": 444,
+        "expires": "Date",
+        "size": 10
+      },
+      {
+        "name": "Jordan 6",
+        "bidPrice": 333,
+        "highestBid": 555,
+        "lowestAsk": 444,
+        "expires": "Date",
+        "size": 12
+      }
+    ],
+    "Pending": [
+      {
+        "name": "Jordan 7",
+        "orderNumber": 7777777,
+        "purchaseDate": "Date",
+        "price": 888,
+        "status": "Sales Complete"
+      },
+      {
+        "name": "Jordan 7",
+        "orderNumber": 7777777,
+        "purchaseDate": "Date",
+        "price": 888,
+        "status": "Sales Complete"
+      },
+      {
+        "name": "Jordan 7",
+        "orderNumber": 7777777,
+        "purchaseDate": "Date",
+        "price": 888,
+        "status": "Sales Complete"
+      },
+      {
+        "name": "Jordan 7",
+        "orderNumber": 7777777,
+        "purchaseDate": "Date",
+        "price": 888,
+        "status": "Sales Complete"
+      }
+    ]
+  }
+}
