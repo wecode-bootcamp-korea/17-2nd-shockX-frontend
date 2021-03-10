@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const BillingInput = ({ item, handleInputInfo }) => {
+const BillingInput = ({ item, handleInputInfo, inputs }) => {
   const [inputInfo, setInfo] = useState({ value: "" });
-
   const infoOnChange = (e) => {
     const { value, name } = e.target;
     handleInputInfo({ value, name });
@@ -16,7 +15,7 @@ const BillingInput = ({ item, handleInputInfo }) => {
         name={item.name}
         placeholder={item.text}
         onChange={infoOnChange}
-        value={inputInfo.value}
+        value={inputs[item.name]}
       />
       <InputInsideText>{item.text}</InputInsideText>
     </OneBillingInput>
