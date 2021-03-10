@@ -58,41 +58,53 @@ const Payment = () => {
   let useParam = useParams();
   const history = useHistory();
 
-  useEffect(() => {
-    if (useParam.id === "buy") {
-      setIsBuy(0);
-    } else {
-      setIsBuy(1);
-    }
-    fetch("/Data/PaymentData.json", {
-      method: "GET",
-      headers: {
-        Authorization: localStorage.getItem("Kakao_token"),
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => setDetailData(data));
-  }, [useParam.id]);
-
-  //백앤드와 통신할때
   // useEffect(() => {
   //   if (useParam.id === "buy") {
   //     setIsBuy(0);
   //   } else {
   //     setIsBuy(1);
   //   }
-  //   fetch(`${ORDERAPI}/${useParam.id}/1?size=10`, {
+  //   fetch("/Data/PaymentData.json", {
   //     method: "GET",
   //     headers: {
   //       Authorization: localStorage.getItem("Kakao_token"),
   //     },
   //   })
   //     .then((res) => res.json())
-  //     .then((data) => setDetailData(data.data.product));
+  //     .then((data) => setDetailData(data));
   // }, [useParam.id]);
 
+  //백앤드와 통신할때
+  useEffect(() => {
+    if (useParam.id === "buy") {
+      setIsBuy(0);
+    } else {
+      setIsBuy(1);
+    }
+    fetch(`${ORDERAPI}/${useParam.id}/1?size=15`, {
+      method: "GET",
+      headers: {
+        Authorization: localStorage.getItem("Kakao_token"),
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setDetailData(data.data.product);
+        setInputs({
+          name: data.data.shippingInfo.name,
+          city: data.data.shippingInfo.city,
+          country: data.data.shippingInfo.country,
+          zipCode: data.data.shippingInfo.postalCode,
+          phoneNumber: data.data.shippingInfo.phoneNumber,
+          address: data.data.shippingInfo.primaryAddress,
+          address2: data.data.shippingInfo.secondaryAddress,
+          state: data.data.shippingInfo.state,
+        });
+      });
+  }, [useParam.id]);
+
   const sumbitPaymentInfo = () => {
-    fetch(`${ORDERAPI}/${useParam.id}/1?size=10`, {
+    fetch(`${ORDERAPI}/${useParam.id}/1?size=15`, {
       method: "POST",
       headers: {
         Authorization: localStorage.getItem("Kakao_token"),
@@ -100,8 +112,8 @@ const Payment = () => {
       body: JSON.stringify({
         city: city,
         country: country,
-        isAsk: isAsk,
-        isBid: isBid,
+        isAsk: isAsk === false ? "0" : "1",
+        isBid: isBid === false ? "0" : "1",
         totalPrice: isBuy === 0 ? buyTotalPrice : sellTotalPrice,
         name: name,
         phoneNumber: phoneNumber,
@@ -255,6 +267,7 @@ const Payment = () => {
             <ShippingInfoPage
               data={billingProps}
               handleInputInfo={handleInputInfo}
+              inputs={inputs}
             />
           )}
           {currentIdx === 2 && (

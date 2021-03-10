@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BillingInput from "./BillingInput";
 
-const ShippingInfoPage = ({ data, handleInputInfo }) => {
+const ShippingInfoPage = ({ data, handleInputInfo, inputs }) => {
   return (
     <ShippingInfoContainer>
       <BillingHeader>
@@ -11,8 +11,15 @@ const ShippingInfoPage = ({ data, handleInputInfo }) => {
       </BillingHeader>
       <BillingBody>
         <BillingInfoText>Billing Info</BillingInfoText>
-        {data.map((item) => {
-          return <BillingInput handleInputInfo={handleInputInfo} item={item} />;
+        {data.map((item, idx) => {
+          return (
+            <BillingInput
+              key={idx}
+              inputs={inputs}
+              handleInputInfo={handleInputInfo}
+              item={item}
+            />
+          );
         })}
       </BillingBody>
     </ShippingInfoContainer>
