@@ -34,6 +34,8 @@ const Account = () => {
         })
           .then((res) => res.json())
           .then((res) => {
+            console.log(res);
+            localStorage.setItem("username", res.user_name);
             localStorage.setItem("Kakao_token", res.access_token);
             if (res.access_token) {
               alert("You are Logged In with Kakao!");

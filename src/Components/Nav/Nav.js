@@ -28,15 +28,17 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsMainImage(
-        window.pageYOffset > 0 && isSearchModalOpen === false ? false : true
-      );
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if (location.pathname === "/") {
+      const handleScroll = () => {
+        setIsMainImage(
+          window.pageYOffset > 0 && isSearchModalOpen === false ? false : true
+        );
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   useEffect(() => {
