@@ -1,10 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 
 const FeaturedItem = ({ product }) => {
   const newPrice = Math.round(product.price);
+  const history = useHistory();
+  const goToDetail = (productId) => {
+    history.push(`/product/${productId}`);
+  };
+
   return (
-    <OneItemContainer>
+    <OneItemContainer onClick={() => goToDetail(product.productId)}>
       <ItemImage src={product.productImage} alt={product.productName} />
       <h5>{product.productName}</h5>
       <p>Lowest Ask</p>

@@ -5,7 +5,15 @@ import LastSaleBox from "./MarketSummary/LastSaleBox";
 import ActionButton from "./MarketSummary/ActionButton";
 import SizeModal from "./Modal/SizeModal";
 
-export default function MarketSummary({ sizes, products, updateIdx, dataIdx }) {
+export default function MarketSummary({
+  goToBuy,
+  sizes,
+  products,
+  updateIdx,
+  dataIdx,
+  productId,
+  goToSell,
+}) {
   const [isModalOn, setIsModalOn] = useState(false);
   const handleModal = () => {
     setIsModalOn(!isModalOn);
@@ -20,6 +28,10 @@ export default function MarketSummary({ sizes, products, updateIdx, dataIdx }) {
         <ActionButton
           lowestAsk={sizes?.[dataIdx].lowest_ask}
           highestBid={sizes?.[dataIdx].highest_bid}
+          goToBuy={goToBuy}
+          goToSell={goToSell}
+          sizeId={sizes?.[dataIdx].size_id}
+          productId={productId}
         />
       </Container>
       {isModalOn && (
@@ -32,5 +44,5 @@ export default function MarketSummary({ sizes, products, updateIdx, dataIdx }) {
 const Container = styled.div`
   ${({ theme }) => theme.flexCenter};
   justify-content: start;
-  margin-top: 40px;
+  margin: 40px 0;
 `;

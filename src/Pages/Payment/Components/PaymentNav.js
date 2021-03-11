@@ -1,15 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 
-const PaymentNav = () => (
-  <PaymentNavBar>
-    <PaymentNavLogo
-      alt="kakaoIcon"
-      src={process.env.PUBLIC_URL + "/Images/shockX_logo_green.svg"}
-    />
-    <FAQtext>FAQ</FAQtext>
-  </PaymentNavBar>
-);
+const PaymentNav = () => {
+  const history = useHistory();
+  const goToMain = () => {
+    history.push("/");
+  };
+  return (
+    <PaymentNavBar>
+      <PaymentNavLogo
+        onClick={goToMain}
+        alt="kakaoIcon"
+        src={process.env.PUBLIC_URL + "/Images/shockX_logo_green.svg"}
+      />
+      <FAQtext>FAQ</FAQtext>
+    </PaymentNavBar>
+  );
+};
 
 export default PaymentNav;
 

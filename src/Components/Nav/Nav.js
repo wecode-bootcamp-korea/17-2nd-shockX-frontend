@@ -83,6 +83,7 @@ const Nav = () => {
   const logOut = () => {
     localStorage.removeItem("Kakao_token");
     alert("You are logged out!");
+    history.push("/");
   };
 
   const filteredList = searchItems.filter((item) => {

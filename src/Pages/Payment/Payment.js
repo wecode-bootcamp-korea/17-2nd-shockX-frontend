@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useHistory, useLocation } from "react-router-dom";
 import PaymentNav from "./Components/PaymentNav";
 import PaymentFooter from "./Components/PaymentFooter";
 import PaymentImage from "./Components/PaymentImage";
@@ -18,6 +18,9 @@ import {
   notAvailableProps,
 } from "./paymentData";
 import { ORDERAPI } from "../../Config";
+
+const token =
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIn0.jobINaCf9hLy_mJ21TgevUVleKtwPKzE85mcnacImHe1pLKglNuA_KHL6V6yaYOPs-H_e-s1MAPnNoJBt6WEig";
 
 const Payment = () => {
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -58,6 +61,7 @@ const Payment = () => {
 
   let useParam = useParams();
   const history = useHistory();
+  const location = useLocation();
 
   // useEffect(() => {
   //   if (useParam.id === "buy") {
@@ -75,21 +79,24 @@ const Payment = () => {
   //     .then((data) => setDetailData(data));
   // }, [useParam.id]);
 
+  //localStorage.getItem("Kakao_token")
   //백앤드와 통신할때
   useEffect(() => {
+    const sizeQuery = location.search;
+    const pathnameQuery = location.pathname;
     if (useParam.id === "buy") {
       setIsBuy(0);
     } else {
       setIsBuy(1);
     }
-    fetch(`${ORDERAPI}/${useParam.id}/1?size=15`, {
+    fetch(`${ORDERAPI}${pathnameQuery}${sizeQuery}`, {
       method: "GET",
       headers: {
         Authorization: localStorage.getItem("Kakao_token"),
       },
     })
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         setDetailData(data.data.product);
         setInputs({
           name: data.data.shippingInfo.name,
@@ -105,7 +112,9 @@ const Payment = () => {
   }, [useParam.id]);
 
   const sumbitPaymentInfo = () => {
-    fetch(`${ORDERAPI}/${useParam.id}/1?size=15`, {
+    const pathnameQuery = location.pathname;
+    const sizeQuery = location.search;
+    fetch(`${ORDERAPI}${pathnameQuery}${sizeQuery}`, {
       method: "POST",
       headers: {
         Authorization: localStorage.getItem("Kakao_token"),
@@ -113,8 +122,8 @@ const Payment = () => {
       body: JSON.stringify({
         city: city,
         country: country,
-        isAsk: isAsk === false ? "0" : "1",
-        isBid: isBid === false ? "0" : "1",
+        isAsk: isAsk === true ? "0" : "1",
+        isBid: isBid === true ? "0" : "1",
         totalPrice: isBuy === 0 ? buyTotalPrice : sellTotalPrice,
         name: name,
         phoneNumber: phoneNumber,
@@ -126,8 +135,8 @@ const Payment = () => {
         expirationDate: expirationNum,
       }),
     })
-      .then(res => res.json())
-      .then(res => {
+      .then((res) => res.json())
+      .then((res) => {
         if (res.message === "SUCCESS") {
           alert("Your Order is Confirmed!");
           history.push("/");
@@ -135,32 +144,32 @@ const Payment = () => {
       });
   };
 
-  const changeIdxHanlder = idx => {
+  const changeIdxHanlder = (idx) => {
     if (idx < 2) {
       setCurrentIdx(idx + 1);
     }
   };
-  const changeTabHandler = id => {
+  const changeTabHandler = (id) => {
     setIsPlace(id);
     setIsBid(!isBid);
     setIsAsk(!isAsk);
   };
 
-  const handleInputNum = e => {
+  const handleInputNum = (e) => {
     setInputs({
       ...inputs,
       [e.name]: e.value,
     });
   };
 
-  const handleInputInfo = e => {
+  const handleInputInfo = (e) => {
     setInputs({
       ...inputs,
       [e.name]: e.value,
     });
   };
 
-  const messageHandler = e => {
+  const messageHandler = (e) => {
     if (e.key === "Enter") {
       if (buyInput || sellInput) {
         setIsShowAddFeeList(true);
@@ -208,7 +217,7 @@ const Payment = () => {
     }
   };
 
-  const expirationHandler = e => {
+  const expirationHandler = (e) => {
     setExpirationNum(e.target.value);
   };
 

@@ -2,33 +2,48 @@
 import React, { useState, useEffect } from "react";
 import Form from "./Components/Form";
 import MarketHistoryForm from "./Components/MarketHistoryForm";
+import Nav from "../../Components/Nav/Nav";
 import { ITEMDETAILAPI } from "../../Config";
+import { useHistory, useLocation } from "react-router-dom";
 
 export default function ItemDetail() {
   const [itemData, setItemData] = useState([]);
   const [dataIdx, setDataIdx] = useState(0);
-  const updateIdx = buttonId => {
+  const updateIdx = (buttonId) => {
     setDataIdx(buttonId);
   };
 
+  const location = useLocation();
+
   const getItemData = () => {
-    fetch(`${ITEMDETAILAPI}`)
-      .then(res => res.json())
-      .then(res => setItemData(res));
+    const detailQuery = location.pathname;
+    fetch(`${ITEMDETAILAPI}${detailQuery}`)
+      .then((res) => res.json())
+      .then((res) => setItemData(res));
+  };
+  const history = useHistory();
+  const goToBuy = (id, size) => {
+    history.push(`/order/buy/${id}?size=${size}`);
   };
 
-  // const getItemData = () => {
-  //   fetch("./Data/ItemDetailData.json")
-  //     .then(res => res.json())
-  //     .then(res => setItemData(res));
-  // };
+  const goToSell = (id, size) => {
+    history.push(`/order/sell/${id}?size=${size}`);
+  };
 
   useEffect(() => {
     getItemData();
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <Form itemData={itemData} updateIdx={updateIdx} dataIdx={dataIdx} />
+      <Nav />
+      <Form
+        goToBuy={goToBuy}
+        goToSell={goToSell}
+        itemData={itemData}
+        updateIdx={updateIdx}
+        dataIdx={dataIdx}
+      />
       <MarketHistoryForm
         itemData={itemData}
         updateIdx={updateIdx}
