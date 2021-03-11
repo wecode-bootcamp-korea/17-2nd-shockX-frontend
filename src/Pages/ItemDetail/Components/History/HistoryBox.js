@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 function HistoryBox({ sizes }) {
-  console.log(sizes);
   return (
     <Container>
       <HistoryHead>12 MONTH HISTORICAL</HistoryHead>

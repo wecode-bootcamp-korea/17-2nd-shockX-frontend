@@ -2,13 +2,14 @@
 import React, { useState } from "react";
 import MenuTab from "./Components/MenuTab";
 import BuyingSelling from "./Components/BuyingSelling";
+import Portfolio from "./Portfolio";
 import Nav from "../../Components/Nav/Nav";
 import styled from "styled-components";
 
 const Mypage = () => {
   const [currentMenu, setCurrentMenu] = useState(2);
 
-  const menuHandler = id => {
+  const menuHandler = (id) => {
     setCurrentMenu(id);
   };
 
@@ -24,6 +25,7 @@ const Mypage = () => {
           {currentMenu === 3 && (
             <BuyingSelling data={sellingProps} currentMenu={currentMenu} />
           )}
+          {currentMenu === 5 && <Portfolio />}
         </CurrentPage>
       </MyPageContainer>
     </>

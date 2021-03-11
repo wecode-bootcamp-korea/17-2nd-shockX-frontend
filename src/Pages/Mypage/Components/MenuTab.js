@@ -24,6 +24,7 @@ export default MenuTab;
 
 const MenuTabWrapper = styled.aside`
   background-color: #f5f5f6;
+  margin-top: 80px;
   width: 260px;
   height: 100%;
 `;

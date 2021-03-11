@@ -4,8 +4,8 @@ import styled from "styled-components";
 function TotalContainer(props) {
   return (
     <Form>
-      <Empty>*</Empty>
-      <body>a</body>
+      <Empty></Empty>
+      <body></body>
     </Form>
   );
 }

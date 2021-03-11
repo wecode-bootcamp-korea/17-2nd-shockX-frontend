@@ -8,21 +8,30 @@ import ItemImage from "./Container/ItemImage";
 import ScrollSlider from "./Container/ScrollSlider";
 import ProductInfo from "./Container/ProductInfo";
 
-export default function Form({ itemData, updateIdx, dataIdx }) {
+export default function Form({
+  itemData,
+  updateIdx,
+  dataIdx,
+  goToBuy,
+  goToSell,
+}) {
   const [scrollValue, setScrollValue] = useState(0);
-  const handleScrollValue = e => {
+  const handleScrollValue = (e) => {
     setScrollValue(e.target.value);
   };
-  // console.log(itemData.results.product_ticker);
+
   return (
     <Format>
       <SocialBtnContainer />
       <h1>{itemData.results?.product_name}</h1>
       <ProductSummary ticker={itemData.results?.product_ticker} />
       <MarketSummary
+        productId={itemData.results?.product_id}
         sizes={itemData.results?.sizes}
         updateIdx={updateIdx}
         dataIdx={dataIdx}
+        goToBuy={goToBuy}
+        goToSell={goToSell}
       />
       <ItemImage imageIdx={scrollValue} images={itemData.results?.image_url} />
       {itemData.results?.product_ticker === "AJ6-BI19" && (
@@ -39,6 +48,7 @@ const Format = styled.div`
   justify-content: left;
   padding: 0 15px;
   margin: 0 auto;
+  margin-top: 120px;
 
   h1 {
     max-width: 70%;

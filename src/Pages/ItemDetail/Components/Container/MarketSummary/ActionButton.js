@@ -2,13 +2,17 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function ActionButton({ lowestAsk, highestBid }) {
-  // const LowestAsk = lowestAsk?.split("").slice(0, 3).join("");
-  // const HighestBid = highestBid.split("").slice(0, 3).join("");
-
+export default function ActionButton({
+  sizeId,
+  lowestAsk,
+  highestBid,
+  goToBuy,
+  goToSell,
+  productId,
+}) {
   return (
     <ActionButtons>
-      <BuyOrBid>
+      <BuyOrBid onClick={() => goToBuy(productId, sizeId)}>
         <div className="left_section">
           <p className="market_price">${lowestAsk}</p>
           <p className="action_descripton">Lowest Ask</p>
@@ -18,7 +22,7 @@ export default function ActionButton({ lowestAsk, highestBid }) {
           <p className="action_text">or Bid</p>
         </div>
       </BuyOrBid>
-      <SellOrAsk>
+      <SellOrAsk onClick={() => goToSell(productId, sizeId)}>
         <div className="left_section">
           <p className="market_price">${highestBid}</p>
           <p className="action_descripton">Highest Bid</p>
@@ -33,7 +37,7 @@ export default function ActionButton({ lowestAsk, highestBid }) {
 }
 
 const ActionButtons = styled.div`
-  ${props => props.theme.flexCenter}
+  ${(props) => props.theme.flexCenter}
   margin: 0 4px;
   height: auto;
   p {
@@ -56,8 +60,8 @@ const ActionButtons = styled.div`
 `;
 
 const BuyOrBid = styled.button`
-  ${props => props.theme.flexCenter}
-  background-color: ${props => props.theme.colors.red};
+  ${(props) => props.theme.flexCenter}
+  background-color: ${(props) => props.theme.colors.red};
   margin: 0 16px;
   padding: 8px 16px;
   border-radius: 4px;
@@ -68,8 +72,8 @@ const BuyOrBid = styled.button`
 `;
 
 const SellOrAsk = styled.button`
-  ${props => props.theme.flexCenter}
-  background-color: ${props => props.theme.colors.green};
+  ${(props) => props.theme.flexCenter}
+  background-color: ${(props) => props.theme.colors.green};
   margin: 0 12px;
   padding: 8px 16px;
   border-radius: 4px;

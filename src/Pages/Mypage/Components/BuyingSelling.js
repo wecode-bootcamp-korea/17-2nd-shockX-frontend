@@ -11,7 +11,7 @@ const Buying = ({ data, currentMenu }) => {
 
   useEffect(() => {
     const buyOrSell = currentMenu === 2 ? "buying" : "selling";
-    fetch(`http://10.58.6.35:8000/order/account/${buyOrSell}`, {
+    fetch(`${ORDERAPI}/order/account/${buyOrSell}`, {
       method: "GET",
       headers: {
         Authorization: localStorage.getItem("Kakao_token"),

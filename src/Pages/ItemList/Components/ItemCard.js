@@ -6,7 +6,7 @@ const ItemCard = ({ productInfoList }) => {
   const history = useHistory();
 
   const goToDetail = (productId) => {
-    history.push(`/product/detail/${productId}`);
+    history.push(`/product/${productId}`);
   };
 
   return (

@@ -5,9 +5,6 @@ const CurrentTab = ({ handleTab, currentMenu, currentTab }) => {
   const purchaseOrSale = currentMenu === 2 ? "PURCHASING" : "SALES";
   return (
     <HeaderWrapper>
-      <Purchaing>
-        {purchaseOrSale} <p>$756</p>
-      </Purchaing>
       <TabContainer>
         <OneTab onClick={() => handleTab(0)} clicked={currentTab === 0}>
           Current
@@ -31,15 +28,6 @@ const HeaderWrapper = styled.header`
   display: flex;
   flex-direction: column;
   margin-top: 70px;
-`;
-
-const Purchaing = styled.h1`
-  margin: 20px 0px 20px 20px;
-  font-size: 15px;
-  p {
-    margin: 3px auto;
-    font-size: 25px;
-  }
 `;
 
 const TabContainer = styled.ul`
