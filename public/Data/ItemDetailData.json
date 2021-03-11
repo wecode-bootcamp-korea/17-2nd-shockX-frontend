@@ -1,0 +1,379 @@
+{
+  "results": {
+    "product_name": "Nike Air Force 1 Low Supreme White",
+    "product_ticker": "qa923829",
+    "color": "ash pearl",
+    "style": "GTY242",
+    "description": "Jordan Brand adds a twist to a classic with the Air Jordan 1 WMNS Satin “Black Toe”, now available on StockX. Jordan is no stranger to adding satin to the Jordan 1. In May of 2018, they released a satin rendition of the “Shattered Backboard” 1 in a similar fashion, revealing that the release would be in women’s sizing. This AJ 1 features classic “Black Toe” color scheme. This design is constructed in a mix of leather and satin construction providing a luxury feel. A metal Wings logo on the heel completes",
+    "retail_price": 242,
+    "release_date": "2/24/2021",
+    "image_URL": [
+      "https://stockx-360.imgix.net/Air-Jordan-4-Retro-White-Court-Purple/Images/Air-Jordan-4-Retro-White-Court-Purple/Lv2/img01.jpg?auto=format,compress&q=90&updated_at=1606315846&w=1000",
+      "https://stockx-360.imgix.net/Air-Jordan-4-Retro-White-Court-Purple/Images/Air-Jordan-4-Retro-White-Court-Purple/Lv2/img35.jpg?auto=format,compress&q=90&updated_at=1606315846&w=400",
+      "https://stockx-360.imgix.net/Air-Jordan-4-Retro-White-Court-Purple/Images/Air-Jordan-4-Retro-White-Court-Purple/Lv2/img34.jpg?auto=format,compress&q=90&updated_at=1606315846&w=400",
+      "https://stockx-360.imgix.net/Air-Jordan-4-Retro-White-Court-Purple/Images/Air-Jordan-4-Retro-White-Court-Purple/Lv2/img33.jpg?auto=format,compress&q=90&updated_at=1606315846&w=400"
+    ],
+    "sizes": [
+      {
+        "size_id": 1,
+        "size_name": 8,
+        "last_sale": 430,
+        "lowest_ask": 303,
+        "highest_bid": 343,
+        "total_sales": 242,
+        "price_premium": 24,
+        "average_sale_price": 196,
+        "sales_history": [
+          {
+            "sale_price": 279.0,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279.0,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          }
+        ]
+      },
+      {
+        "size_id": 2,
+        "size_name": 9,
+        "last_sale": 330,
+        "lowest_ask": 0,
+        "highest_bid": 353,
+        "total_sales": 242,
+        "price_premium": 24,
+        "average_sale_price": 196,
+        "sale_history": [
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          }
+        ]
+      },
+      {
+        "size_id": 3,
+        "size_name": 10,
+        "last_sale": 410,
+        "lowest_ask": 255,
+        "highest_bid": 340,
+        "total_sales": 242,
+        "price_premium": 24,
+        "average_sale_price": 196,
+        "sale_history": [
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          }
+        ]
+      },
+      {
+        "size_id": 4,
+        "size_name": 8,
+        "last_sale": 400,
+        "lowest_ask": 393,
+        "highest_bid": 423,
+        "total_sales": 242,
+        "price_premium": 24,
+        "average_sale_price": 196,
+        "sale_history": [
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          }
+        ]
+      },
+      {
+        "size_id": 5,
+        "size_name": 8,
+        "last_sale": 450,
+        "lowest_ask": 353,
+        "highest_bid": 353,
+        "total_sales": 242,
+        "price_premium": 24,
+        "average_sale_price": 196,
+        "sale_history": [
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          }
+        ]
+      },
+      {
+        "size_id": 6,
+        "size_name": 8,
+        "last_sale": 500,
+        "lowest_ask": 353,
+        "highest_bid": 353,
+        "total_sales": 242,
+        "price_premium": 24,
+        "average_sale_price": 196,
+        "sale_history": [
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          }
+        ]
+      },
+      {
+        "size_id": 7,
+        "size_name": 8,
+        "last_sale": 480,
+        "lowest_ask": 353,
+        "highest_bid": 353,
+        "total_sales": 242,
+        "price_premium": 24,
+        "average_sale_price": 196,
+        "sale_history": [
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          }
+        ]
+      },
+      {
+        "size_id": 8,
+        "size_name": 8,
+        "last_sale": 470,
+        "lowest_ask": 353,
+        "highest_bid": 353,
+        "total_sales": 242,
+        "price_premium": 24,
+        "average_sale_price": 196,
+        "sale_history": [
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          }
+        ]
+      },
+      {
+        "size_id": 9,
+        "size_name": 8,
+        "last_sale": 410,
+        "lowest_ask": 353,
+        "highest_bid": 353,
+        "total_sales": 242,
+        "price_premium": 24,
+        "average_sale_price": 196,
+        "sale_history": [
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          }
+        ]
+      },
+      {
+        "size_id": 10,
+        "size_name": 8,
+        "last_sale": 490,
+        "lowest_ask": 353,
+        "highest_bid": 353,
+        "total_sales": 242,
+        "price_premium": 24,
+        "average_sale_price": 196,
+        "sale_history": [
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          },
+          {
+            "sale_price": 279,
+            "date": "2020/5/3"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -6,6 +6,7 @@ import ItemList from "./Pages/ItemList/ItemList";
 import Payment from "./Pages/Payment/Payment";
 import Mypage from "./Pages/Mypage/Mypage";
 import Main from "./Pages/Main/Main";
+import Portfolio from "./Pages/Mypage/Portfolio";
 
 class Routes extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class Routes extends React.Component {
           <Route exact path="/order/:id" component={Payment} />
           <Route exact path="/product/detail/:id" component={ItemDetail} />
           <Route exact path="/mypage" component={Mypage} />
+          <Route exact path="/portfolio" component={Portfolio} />
         </Switch>
       </Router>
     );

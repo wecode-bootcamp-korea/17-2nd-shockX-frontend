@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useParams, useHistory } from "react-router-dom";
@@ -87,8 +88,8 @@ const Payment = () => {
         Authorization: localStorage.getItem("Kakao_token"),
       },
     })
-      .then((res) => res.json())
-      .then((data) => {
+      .then(res => res.json())
+      .then(data => {
         setDetailData(data.data.product);
         setInputs({
           name: data.data.shippingInfo.name,
@@ -125,8 +126,8 @@ const Payment = () => {
         expirationDate: expirationNum,
       }),
     })
-      .then((res) => res.json())
-      .then((res) => {
+      .then(res => res.json())
+      .then(res => {
         if (res.message === "SUCCESS") {
           alert("Your Order is Confirmed!");
           history.push("/");
@@ -134,32 +135,32 @@ const Payment = () => {
       });
   };
 
-  const changeIdxHanlder = (idx) => {
+  const changeIdxHanlder = idx => {
     if (idx < 2) {
       setCurrentIdx(idx + 1);
     }
   };
-  const changeTabHandler = (id) => {
+  const changeTabHandler = id => {
     setIsPlace(id);
     setIsBid(!isBid);
     setIsAsk(!isAsk);
   };
 
-  const handleInputNum = (e) => {
+  const handleInputNum = e => {
     setInputs({
       ...inputs,
       [e.name]: e.value,
     });
   };
 
-  const handleInputInfo = (e) => {
+  const handleInputInfo = e => {
     setInputs({
       ...inputs,
       [e.name]: e.value,
     });
   };
 
-  const messageHandler = (e) => {
+  const messageHandler = e => {
     if (e.key === "Enter") {
       if (buyInput || sellInput) {
         setIsShowAddFeeList(true);
@@ -207,7 +208,7 @@ const Payment = () => {
     }
   };
 
-  const expirationHandler = (e) => {
+  const expirationHandler = e => {
     setExpirationNum(e.target.value);
   };
 
