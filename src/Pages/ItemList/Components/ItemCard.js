@@ -1,25 +1,31 @@
 import React from "react";
 import styled from "styled-components";
-import { Link, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const ItemCard = ({ productInfoList }) => {
-  const params = useParams();
+  const history = useHistory();
+
+  const goToDetail = (productId) => {
+    history.push(`/product/detail/${productId}`);
+  };
+
   return (
     <ItemCardContainer>
       {productInfoList.map((product) => {
         return (
-          <StyledLink to={`/product/detail/${params}`}>
-            <CardSection key={product.productId}>
-              <ImgWrapper>
-                <ProductImg src={product.productImage} alt="product" />
-              </ImgWrapper>
-              <TextWrapper>
-                <ProductName>{product.productName}</ProductName>
-                <LowestAsk>Lowest Ask</LowestAsk>
-                <Price>$ {Math.floor(product.price)}</Price>
-              </TextWrapper>
-            </CardSection>
-          </StyledLink>
+          <CardSection
+            key={product.productId}
+            onClick={() => goToDetail(product.productId)}
+          >
+            <ImgWrapper>
+              <ProductImg src={product.productImage} alt="product" />
+            </ImgWrapper>
+            <TextWrapper>
+              <ProductName>{product.productName}</ProductName>
+              <LowestAsk>Lowest Ask</LowestAsk>
+              <Price>$ {Math.floor(product.price)}</Price>
+            </TextWrapper>
+          </CardSection>
         );
       })}
     </ItemCardContainer>
@@ -27,11 +33,6 @@ const ItemCard = ({ productInfoList }) => {
 };
 
 export default ItemCard;
-
-const StyledLink = styled(Link)`
-  color: black;
-  text-decoration: none;
-`;
 
 const ItemCardContainer = styled.section`
   display: grid;
@@ -66,8 +67,10 @@ const TextWrapper = styled.div`
 `;
 
 const ProductName = styled.div`
+  height: 30px;
   font-size: 15px;
   margin-bottom: 6px;
+  overflow: hidden;
 `;
 
 const LowestAsk = styled.div`
