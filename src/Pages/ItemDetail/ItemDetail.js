@@ -23,11 +23,15 @@ export default function ItemDetail() {
   };
   const history = useHistory();
   const goToBuy = (id, size) => {
-    history.push(`/order/buy/${id}?size=${size}`);
+    localStorage.getItem("Kakao_token")
+      ? history.push(`/order/buy/${id}?size=${size}`)
+      : alert("Please Log In!");
   };
 
   const goToSell = (id, size) => {
-    history.push(`/order/sell/${id}?size=${size}`);
+    localStorage.getItem("Kakao_token")
+      ? history.push(`/order/sell/${id}?size=${size}`)
+      : alert("Please Log In!");
   };
 
   useEffect(() => {

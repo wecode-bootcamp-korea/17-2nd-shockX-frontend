@@ -97,6 +97,7 @@ const Payment = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setDetailData(data.data.product);
         setInputs({
           name: data.data.shippingInfo.name,
@@ -122,8 +123,8 @@ const Payment = () => {
       body: JSON.stringify({
         city: city,
         country: country,
-        isAsk: isAsk === true ? "0" : "1",
-        isBid: isBid === true ? "0" : "1",
+        isAsk: isAsk === false ? "0" : "1",
+        isBid: isBid === false ? "0" : "1",
         totalPrice: isBuy === 0 ? buyTotalPrice : sellTotalPrice,
         name: name,
         phoneNumber: phoneNumber,
