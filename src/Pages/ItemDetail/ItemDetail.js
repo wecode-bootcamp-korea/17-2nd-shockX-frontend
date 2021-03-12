@@ -9,7 +9,7 @@ import { useHistory, useLocation } from "react-router-dom";
 export default function ItemDetail() {
   const [itemData, setItemData] = useState([]);
   const [dataIdx, setDataIdx] = useState(0);
-  const updateIdx = (buttonId) => {
+  const updateIdx = buttonId => {
     setDataIdx(buttonId);
   };
 
@@ -18,8 +18,8 @@ export default function ItemDetail() {
   const getItemData = () => {
     const detailQuery = location.pathname;
     fetch(`${ITEMDETAILAPI}${detailQuery}`)
-      .then((res) => res.json())
-      .then((res) => setItemData(res));
+      .then(res => res.json())
+      .then(res => setItemData(res));
   };
   const history = useHistory();
   const goToBuy = (id, size) => {

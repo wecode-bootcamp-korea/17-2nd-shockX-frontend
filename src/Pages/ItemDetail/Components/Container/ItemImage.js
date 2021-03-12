@@ -25,9 +25,12 @@ export default function ItemImage({ images, imageIdx }) {
 
 const Item = styled.div`
   .item_image_box {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
+    height: 760px;
     img {
-      width: 100%;
+      height: 100%;
     }
   }
 `;
