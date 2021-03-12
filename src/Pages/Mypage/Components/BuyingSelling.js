@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import CurrentTab from "./CurrentTab";
@@ -17,15 +18,15 @@ const Buying = ({ data, currentMenu }) => {
         Authorization: localStorage.getItem("Kakao_token"),
       },
     })
-      .then((res) => res.json())
-      .then((data) => {
+      .then(res => res.json())
+      .then(data => {
         console.log(data);
         setCurrentList(data[buyOrSell].current);
         setPendingList(data[buyOrSell].pending);
       });
   }, [currentMenu]);
 
-  const handleTab = (id) => {
+  const handleTab = id => {
     setCurrentTab(id);
   };
 

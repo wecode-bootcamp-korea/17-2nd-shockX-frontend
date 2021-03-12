@@ -2,6 +2,7 @@
   "portfolio": [
     {
       "name": "Jordan 1 Retro High Dark Mocha",
+      "type": "Jordan",
       "size": "10.5",
       "purchase_date": "2020/07/31",
       "purchase_price": 500,
@@ -9,6 +10,30 @@
     },
     {
       "name": "Jordan 14 Retro Doernbecher (2019)",
+      "type": "Jordan",
+      "size": "9",
+      "purchase_date": "2021/3/1",
+      "purchase_price": 1000,
+      "market_value": 900
+    },
+    {
+      "name": "nike SuperStar (2019)",
+      "type": "Nike",
+      "size": "9",
+      "purchase_date": "2021/3/1",
+      "purchase_price": 1000,
+      "market_value": 900
+    },
+    {
+      "name": "nike SuperStar (2019)",
+      "type": "Nike",
+      "purchase_date": "2021/3/1",
+      "purchase_price": 1000,
+      "market_value": 900
+    },
+    {
+      "name": "Kobe AD NXT",
+      "type": "Kobe",
       "size": "9",
       "purchase_date": "2021/3/1",
       "purchase_price": 1000,
