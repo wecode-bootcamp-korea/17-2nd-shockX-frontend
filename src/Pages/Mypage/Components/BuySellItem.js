@@ -77,4 +77,5 @@ const ItemImage = styled.img`
   margin-right: 10px;
   width: 70px;
   height: 50px;
+  object-fit: cover;
 `;

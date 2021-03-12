@@ -7,7 +7,7 @@ import Nav from "../../Components/Nav/Nav";
 import styled from "styled-components";
 
 const Mypage = () => {
-  const [currentMenu, setCurrentMenu] = useState(2);
+  const [currentMenu, setCurrentMenu] = useState(5);
 
   const menuHandler = (id) => {
     setCurrentMenu(id);

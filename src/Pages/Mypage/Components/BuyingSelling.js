@@ -19,6 +19,7 @@ const Buying = ({ data, currentMenu }) => {
     })
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setCurrentList(data[buyOrSell].current);
         setPendingList(data[buyOrSell].pending);
       });
